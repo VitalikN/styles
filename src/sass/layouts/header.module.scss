@@ -1,0 +1,10 @@
+@import "../utils/container.module";
+@import "../utils/mixins.module";
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 42px;
+  color: #e8e8e8;
+  background: #696969;
+}
