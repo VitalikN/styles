@@ -1,0 +1,27 @@
+[
+  {
+    "id": "1",
+    "title": "Landing page",
+    "icon": "FaFileAlt"
+  },
+  {
+    "id": "2",
+    "title": "Багатосторінковий сайт",
+    "icon": "FaFileInvoice"
+  },
+  {
+    "id": "3",
+    "title": "Інтернет магазин",
+    "icon": "FaShoppingCart"
+  },
+  {
+    "id": "4",
+    "title": "Аудит сайту",
+    "icon": "FaSearch"
+  },
+  {
+    "id": "5",
+    "title": "Індивідуальна консультація",
+    "icon": "FaComments"
+  }
+]
