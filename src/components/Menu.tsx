@@ -13,7 +13,7 @@ const Menu = () => {
             className={styles.menu__img}
             src="/ball.png"
             alt="ball"
-            width="150"
+            width="200"
             height="100"
             priority={true}
           />
@@ -24,6 +24,16 @@ const Menu = () => {
             src="/cubes.png"
             alt="cubes"
             width="150"
+            height="100"
+            priority={true}
+          />
+        </Link>
+        <Link href="/contacts" className={`${styles.navigation__link} `}>
+          <Image
+            className={styles.menu__img}
+            src="/contacts.png"
+            alt="contacts"
+            width="200"
             height="100"
             priority={true}
           />
