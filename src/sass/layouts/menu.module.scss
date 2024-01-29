@@ -1,6 +1,10 @@
 @import "../utils/container.module";
 @import "../utils/mixins.module";
 
+@import "./animationBall.module.scss";
+@import "./contacts.module.scss";
+@import "./cubes.module.scss";
+
 .menu__section {
   padding: 50px 0;
 }
@@ -8,26 +12,89 @@
   display: flex;
 
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 50px;
   flex-direction: row;
   align-items: stretch;
 }
-.list__item {
+
+.navigation__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  padding: 20px;
+}
+
+// box__ball__menu//
+.list__item__ball {
   background-color: transparent;
-  width: 250px;
+  width: 150px;
   transition: all 0.5s;
   border-radius: 20px;
   &:hover,
   &:focus {
-    scale: 1.09;
     box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2),
       0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
   }
 }
-
-.menu__img {
-  cursor: pointer;
-  border-radius: 20px;
+.box__ball__menu {
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.ball__menu {
+  left: inherit;
+}
+.shadow__menu {
+  left: inherit;
+}
+// box__Contacts__menu//
+
+.contacts__list__item {
+  color: #758697;
+
+  &::before {
+    background: #758697;
+  }
+  &::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #758697;
+  }
+}
+
+.contacts__list__item .contacts__list__icon {
+  animation: shakeContacts 0.6s alternate infinite ease;
+}
+@keyframes shakeContacts {
+  10% {
+    transform: rotate(15deg);
+  }
+  20% {
+    transform: rotate(-15deg);
+  }
+  30% {
+    transform: rotate(15deg);
+  }
+  40% {
+    transform: rotate(-15deg);
+  }
+}
+// cubes__navigation__link //
+.cubes__list {
+  padding-top: 50px;
+  margin-left: 40px;
+}
+// .cubes__item {
+//   &:hover,
+//   &:focus {
+//     box-shadow: none;
+//   }
+// }
+
+.cubes__navigation__link {
+  flex-direction: column;
+}
+.cubes__list__item {
+  width: 120px;
 }

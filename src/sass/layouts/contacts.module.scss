@@ -1,14 +1,6 @@
 @import "../utils/container.module";
 @import "../utils/mixins.module";
 
-.contacts__section {
-  height: calc(100vh - 42px);
-  background-image: linear-gradient(
-    180deg,
-    rgba(196, 196, 196, 0) 5%,
-    #696969 95.19%
-  );
-}
 .contacts__container {
   display: flex;
   align-items: center;

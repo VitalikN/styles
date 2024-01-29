@@ -21,6 +21,12 @@ body {
 body {
   -ms-overflow-style: none;
   scrollbar-width: none;
+  height: 100vh;
+  background-image: linear-gradient(
+    180deg,
+    rgba(196, 196, 196, 0) 5%,
+    #696969 95.19%
+  );
 }
 
 .body-no-scroll {

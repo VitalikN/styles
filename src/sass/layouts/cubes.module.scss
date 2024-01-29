@@ -1,14 +1,6 @@
 @import "../utils/container.module";
 @import "../utils/mixins.module";
 
-.cubes__section {
-  background-image: linear-gradient(
-    180deg,
-    rgba(196, 196, 196, 0) 5%,
-    #696969 95.19%
-  );
-}
-
 .cubes__list {
   height: 100vh;
 
