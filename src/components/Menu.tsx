@@ -3,9 +3,8 @@ import Link from "next/link";
 
 import { AiOutlineMail } from "react-icons/ai";
 import styles from "../sass/layouts/menu.module.scss";
-import Image from "next/image";
-
 import { FaSearch, FaComments } from "react-icons/fa";
+import { BiLogoTiktok } from "react-icons/bi";
 
 const Menu = () => {
   return (
@@ -32,6 +31,18 @@ const Menu = () => {
               </div>
             </Link>
           </li>
+
+          <li className={styles.list__item}>
+            <Link
+              href="/network"
+              className={`${styles.network__list__link} ${styles.tiktok}`}
+            >
+              <BiLogoTiktok
+                className={`${styles.network__list__icon} ${styles.icon__tiktok}`}
+              />
+            </Link>
+          </li>
+
           <li className={`${styles.list__item} ${styles.cubes__item}`}>
             <Link
               href="/cubes"
