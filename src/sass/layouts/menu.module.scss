@@ -5,6 +5,9 @@
 @import "./contacts.module.scss";
 @import "./cubes.module.scss";
 @import "./network.module.scss";
+
+@import "./wave.module.scss";
+
 .menu__section {
   padding: 50px 0;
 }
@@ -113,4 +116,12 @@
 }
 .tiktok .icon__tiktok {
   filter: drop-shadow(2px 1px 1px red);
+}
+// wave__section//
+.wave__section {
+  position: static;
+  background-image: none;
+}
+.box__wave {
+  font-size: 15px;
 }
